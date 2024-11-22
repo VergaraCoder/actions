@@ -14,6 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
+       
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.14.0
+          check-latest: false
+          cache: 'npm'
+      - run: npm install  
+      
       - name: 'verificar'
         run: echo "hello"
 
