@@ -13,5 +13,7 @@ jobs:
     steps:
       - name: 'verificar'
         run: echo "hello"
+      - name: 'View Files'
+        run: ls
   
 
