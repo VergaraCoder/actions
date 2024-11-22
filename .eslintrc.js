@@ -1,4 +1,5 @@
 module.exports = {
+  extends: 'nestjs',
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
@@ -9,6 +10,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    "standard"
   ],
   root: true,
   env: {
@@ -22,4 +24,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },
+  rules: {
+    'no-console': 'off'
+  }
 };
