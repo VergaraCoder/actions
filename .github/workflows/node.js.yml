@@ -11,8 +11,10 @@ jobs:
   jhonatan:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4.2.2
       - name: 'verificar'
         run: echo "hello"
+
       - name: 'View Files'
         run: ls
   
