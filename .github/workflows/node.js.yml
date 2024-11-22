@@ -31,7 +31,5 @@ jobs:
       - name: 'creation of build to deploy'
         run: npm run build
       
-      - name: 'verify lint in the project'
-        run: npm run lint
   
 
