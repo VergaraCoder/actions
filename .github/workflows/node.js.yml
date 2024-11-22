@@ -16,6 +16,6 @@ jobs:
         run: echo "hello"
 
       - name: 'View Files'
-        run: ls
+        run: ls -la
   
 
