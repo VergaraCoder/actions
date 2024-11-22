@@ -21,11 +21,15 @@ jobs:
           check-latest: false
           cache: 'npm'
       - run: npm install  
-      
+
       - name: 'verificar'
         run: echo "hello"
 
       - name: 'View Files'
         run: ls -la
+      
+      - name: 'creation of build to deploy'
+        run: npm run build
+      
   
 
